@@ -1,0 +1,171 @@
+.uploadContainer {
+   display: flex;
+   flex-direction: column;
+
+   justify-content: flex-start;
+   align-items: center;
+
+   border: dashed 2px #888990;
+   border-radius: 10px;
+
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+
+   width: 40vw;
+
+   gap: 1rem;
+}
+
+
+.Upload {
+   width: 3rem;
+   height: 3rem;
+}
+
+.UploadButton {
+   color: #0bb07b;
+   background-color: #fff;
+
+   border: solid 2px #0bb07b;
+   border-radius: 10px;
+
+   width: 20rem;
+   height: 2rem;
+
+   font-size: 16px;
+   font-weight: 600;
+   font-family: 'Montserrat', sans-serif;
+
+   cursor: pointer;
+
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+
+   &:hover {
+      scale: 1.03;
+      background-color: #0bb07c10;
+   }
+}
+
+.SendButton {
+   color: #0bb07b;
+   background-color: #fff;
+
+   border: solid 2px #0bb07b;
+   border-radius: 10px;
+
+   width: 26.5rem;
+   height: 2rem;
+
+   font-size: 16px;
+   font-weight: 600;
+   font-family: 'Montserrat', sans-serif;
+
+   cursor: pointer;
+
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+
+   &:hover {
+      scale: 1.03;
+      background-color: #0bb07c10;
+   }
+}
+
+.LabelUpload {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+
+   color: #383838;
+
+   margin-top: 0.5rem;
+}
+
+
+.inputUpload {
+   display: none;
+}
+
+.FileSelected {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+   gap: 1rem;
+
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+}
+
+.FileSelectedName {
+   width: 26.5rem;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.FileInfo {
+   font-size: 12px;
+   font-weight: 500;
+   font-family: 'Montserrat', sans-serif;
+
+   color: #383838;
+}
+
+.FilePercent {
+   font-size: 14px;
+   font-weight: 700;
+   font-family: 'Montserrat', sans-serif;
+
+   color: #383838;
+}
+
+.FileSelectedBar {
+   border: none;
+   border-radius: 5px;
+
+   height: 5px;
+
+   background-color: #0bb07b;
+
+   margin-top: 5px;
+}
+
+.FileImg {
+   width: 28px;
+   height: 32px;
+}
+
+.FileDelete {
+   width: 25px;
+   height: 24px;
+
+   cursor: pointer;
+}
+
+
+
+@media (max-width: 430px) {
+   .uploadContainer {
+      width: 95%;
+   }
+
+   .FileSelectedName {
+      width: 15rem;
+   }
+
+   .FileSelected {
+      width: 100%;
+
+      margin-top: 1rem;
+      margin-left: 3rem;
+
+   }
+
+   .SendButton {
+      width: 15rem;
+   }
+}
